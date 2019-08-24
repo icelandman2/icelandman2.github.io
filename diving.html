@@ -3,22 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!--
-    File: travel.html
+    File: index.html
     Matt Linker
     Contact: mslinker@alumni.stanford.edu
     All credit to the original author, Jason Downing (jason@downing.io)
     MIT Licensed - see http://opensource.org/licenses/MIT for details.
-    
     Last Updated: August 23, 2019
+
+    Matt Linker's personal website.
   -->
 
   <!-- Custom Title Bar -->
-  <title>Diving</title>
+  <title>Matt Linker | Diving </title>
 
   <!-- Bootstrap Core CSS -->
+  <!-- 6/15/2018: Updated to the latest version of Bootstrap (4.1.1) -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
   <!-- Custom Fonts -->
@@ -43,56 +45,69 @@
 </head>
 
 <body id="page-top">
-  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
 
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed"
-        data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-        </button>
-        <a class="navbar-brand page-scroll" href="#page-top">Matt Linker</a>
-      </div>
+      <!-- Updated with latest Creative -->
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Matt Linker</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" 
+              data-toggle="collapse" data-target="#navbarResponsive" 
+              aria-controls="navbarResponsive" aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a class="page-scroll" href="#page-top">Home</a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
           </li>
-          <li>
-            <a class="page-scroll" href="#about">Diving</a>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#page-top">Diving</a>
           </li>
-          <li>
-            <a class="page-scroll" href="#contact">Contact</a>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="img/resume.pdf">Resume</a>
           </li>
         </ul>
       </div>
-      <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
   </nav>
 
-  <!--  Intro Section  -->
-  <header>
-    <div class="header-content">
-      <div class="header-content-inner">
-        <h1 id="homeHeading" class="text-header">Diving (UNDER CONSTRUCTION)</h1>
-        <hr>
-        <p class="text-header">My dad learned to dive in 1969, when diving was still in its infancy. Right after I graduated from high school, he took me on an introductory dive while our family vacationed in Maui, and I was immediately hooked. I got my Open Water certification in Fall 2015 and my AOW in Spring 2019, while diving whenever circumstances (and my wallet) allowed along the way. When complete, this section will showcase some of the locales annd creatures I have seen while diving! For now, the photos will just be duplicated from those shown in the travel section.</p>
-        <a href="#about" class="btn btn-primary btn-xl page-scroll">View the Photos</a>
+  <!--  Intro Section
+
+        Header image found at the following URL:
+        https://upload.wikimedia.org/wikipedia/commons/f/f5/Free-ride.jpg
+   -->
+  <header class="masthead text-center text-white d-flex">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 class="text-uppercase">
+            <strong>Matt Linker</strong>
+          </h1>
+          <hr>
+        </div>
+        <div class="col-lg-8 mx-auto">
+          <p class="text-faded mb-5">Diving</p>
+          <p class="text-italic mb-5">
+            My dad learned to dive in 1969, when diving was still in its infancy. Right after I graduated from high school, he took me on an introductory dive while our family vacationed in Maui, and I was immediately hooked. I got my Open Water certification in Fall 2015 and my AOW in Spring 2019, while diving whenever circumstances (and my wallet) allowed along the way. This section shows some photos from my diving adventures - unfortunately, I did not bring a camera on many of my dives, including off Monterey when I saw a Great White this past May!</a>
+          </p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#photos">View the Photos</a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Skiing Photos will go here -->
-  <section class="min-padding bg-primary" id="about">
+  <section class="min-padding bg-primary" id="photos">
     <div class="container">
 
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Travel Photos</h2>
+          <h2 class="section-heading">Diving Photos</h2>
           <hr class="light">
         </div>
       </div>
@@ -114,83 +129,128 @@
             "thumbnailHeight": 200
           }'>
 
-            <a href="img/travel/amboise_france.JPG"
-               data-ngthumb="img/travel/amboise_france.JPG">Amboise, France, 2019</a>
+            <a href="img/diving/thai13.JPG"
+               data-ngthumb="img/diving/thai13.JPG">Racha Yai, Thailand, 2018</a>
           
-            <a href="img/travel/murren_switzerland.JPG"
-               data-ngthumb="img/travel/murren_switzerland.JPG">Murren, Switzerland, 2019</a>
+            <a href="img/diving/thai12.JPG"
+               data-ngthumb="img/diving/thai12.JPG">Racha Yai, Thailand, 2018</a>
 
-            <a href="img/travel/mbs_singapore.jpg"
-                data-ngthumb="img/travel/mbs_singapore.jpg">Marina Bay Sands, Singapore, 2019</a>
+            <a href="img/diving/thai11.JPG"
+                data-ngthumb="img/diving/thai11.JPG">Racha Yai, Thailand, 2018</a>
 
-            <a href="img/travel/athens_greece.jpg"
-               data-ngthumb="img/travel/athens_greece.jpg">Athens, Greece, 2018</a>
+            <a href="img/diving/thai10.JPG"
+               data-ngthumb="img/diving/thai10.JPG">Racha Yai, Thailand, 2018</a>
 
-            <a href="img/travel/london_uk.jpg"
-               data-ngthumb="img/travel/london_uk.jpg">London, United Kingdom, 2018</a>
-            
-            <a href="img/travel/campnou_spain.jpg"
-                data-ngthumb="img/travel/campnou_spain.jpg">Camp Nou, Barcelona, Spain, 2018</a>
+            <a href="img/diving/thai9.JPG"
+               data-ngthumb="img/diving/thai9.JPG">Racha Yai, Thailand, 2018</a>
 
-            <a href="img/travel/paris_france.jpg"
-               data-ngthumb="img/travel/paris_france.jpg">Paris, France, 2018</a>
+            <a href="img/diving/thai8.JPG"
+               data-ngthumb="img/diving/thai8.JPG">Racha Yai, Thailand, 2018</a>
+
+            <a href="img/diving/thai7.JPG"
+                data-ngthumb="img/diving/thai7.JPG">Racha Yai, Thailand, 2018</a>
+
+            <a href="img/diving/thai6.JPG"
+               data-ngthumb="img/diving/thai6.JPG">Racha Yai, Thailand, 2018</a>
+
+            <a href="img/diving/thai5.JPG"
+               data-ngthumb="img/diving/thai5.JPG">Racha Yai, Thailand, 2018</a>
           
-            <a href="img/travel/bund_china.JPG"
-               data-ngthumb="img/travel/bund_china.JPG">The Bund, Shanghai, China, 2018</a>
-            
-            <a href="img/travel/rachayai_thailand.jpg"
-                data-ngthumb="img/travel/rachayai_thailand.jpg">Racha Yai, Thailand, 2018</a>
+            <a href="img/diving/thai4.JPG"
+               data-ngthumb="img/diving/thai4.JPG">Racha Yai, Thailand, 2018</a>
 
-            <a href="img/travel/phuket1_thailand.jpg"
-               data-ngthumb="img/travel/phuket1_thailand.jpg">Phuket, Thailand, 2018</a>
+            <a href="img/diving/thai3.JPG"
+                data-ngthumb="img/diving/thai3.JPG">Racha Yai, Thailand, 2018</a>
+
+            <a href="img/diving/thai2.JPG"
+               data-ngthumb="img/diving/thai2.JPG">Racha Yai, Thailand, 2018</a>
+
+            <a href="img/diving/thai1.JPG"
+               data-ngthumb="img/diving/thai1.JPG">Racha Yai, Thailand, 2018</a>
           
-            <a href="img/travel/tokyo2_japan.jpg"
-               data-ngthumb="img/travel/tokyo2_japan.jpg">Tokyo, Japan, 2018</a>
-            
-            <a href="img/travel/tokyo1_japan.jpg"
-               data-ngthumb="img/travel/tokyo1_japan.jpg">Tokyo, Japan, 2018</a>
+            <a href="img/diving/heron7.JPG"
+               data-ngthumb="img/diving/heron7.JPG">Heron Island, Australia, 2017</a>
 
-            <a href="img/travel/milford2_nz.jpg"
-                data-ngthumb="img/travel/milford2_nz.jpg">Milford Sound, New Zealand, 2017</a>
+            <a href="img/diving/heron6.JPG"
+                data-ngthumb="img/diving/heron6.JPG">Heron Island, Australia, 2017</a>
+
+            <a href="img/diving/heron5.JPG"
+               data-ngthumb="img/diving/heron5.JPG">Heron Island, Australia, 2017</a>
+
+            <a href="img/diving/heron4.JPG"
+               data-ngthumb="img/diving/heron4.JPG">Heron Island, Australia, 2017</a>
           
-            <a href="img/travel/milford_nz.jpg"
-                data-ngthumb="img/travel/milford_nz.jpg">Milford Sound, New Zealand, 2017</a>
+            <a href="img/diving/heron3.JPG"
+               data-ngthumb="img/diving/heron3.JPG">Heron Island, Australia, 2017</a>
 
-            <a href="img/travel/queenstown_nz.jpg"
-               data-ngthumb="img/travel/queenstown_nz.jpg">Queenstown, New Zealand, 2017</a>
+            <a href="img/diving/heron2.JPG"
+                data-ngthumb="img/diving/heron2.JPG">Heron Island, Australia, 2017</a>
+
+            <a href="img/diving/heron1.JPG"
+               data-ngthumb="img/diving/heron1.JPG">Heron Island, Australia, 2017</a>
+
+            <a href="img/diving/briggs9.JPG"
+               data-ngthumb="img/diving/briggs9.JPG">Briggs Reef, Australia, 2017</a>
             
-            <a href="img/travel/koala_australia.jpg"
-                data-ngthumb="img/travel/koala_australia.jpg">Brisbane, Queensland, Australia, 2017</a>
+            <a href="img/diving/briggs8.JPG"
+                data-ngthumb="img/diving/briggs8.JPG">Briggs Reef, Australia, 2017</a>
+
+            <a href="img/diving/briggs7.JPG"
+               data-ngthumb="img/diving/briggs7.JPG">Briggs Reef, Australia, 2017</a>
+          
+            <a href="img/diving/briggs6.JPG"
+               data-ngthumb="img/diving/briggs6.JPG">Briggs Reef, Australia, 2017</a>
             
-            <a href="img/travel/heron2_australia.jpg"
-                data-ngthumb="img/travel/heron2_australia.jpg">Heron Island, Queensland, Australia, 2017</a>
+            <a href="img/diving/briggs5.JPG"
+                data-ngthumb="img/diving/briggs5.JPG">Briggs Reef, Australia, 2017</a>
+
+            <a href="img/diving/briggs4.JPG"
+               data-ngthumb="img/diving/briggs4.JPG">Briggs Reef, Australia, 2017</a>
+          
+            <a href="img/diving/briggs3.JPG"
+               data-ngthumb="img/diving/briggs3.JPG">Briggs Reef, Australia, 2017</a>
             
-            <a href="img/travell/heron1_australia.jpg"
-               data-ngthumb="img/travel/heron1_australia.jpg">Heron Island, Queensland, Australia, 2017</a>
+            <a href="img/diving/briggs2.JPG"
+               data-ngthumb="img/diving/briggs2.JPG">Briggs Reef, Australia, 2017</a>
+
+            <a href="img/diving/briggs1.JPG"
+                data-ngthumb="img/diving/briggs1.JPG">Briggs Reef, Australia, 2017</a>
+          
+            <a href="img/diving/fiji11.JPG"
+                data-ngthumb="img/diving/fiji11.JPG">Malolo Reef, Fiji, 2017</a>
+
+            <a href="img/diving/fiji10.JPG"
+               data-ngthumb="img/diving/fiji10.JPG">Malolo Reef, Fiji, 2017</a>
+            
+            <a href="img/diving/fiji9.JPG"
+                data-ngthumb="img/diving/fiji9.JPG">Malolo Reef, Fiji, 2017</a>
+            
+            <a href="img/diving/fiji8.JPG"
+                data-ngthumb="img/diving/fiji8.JPG">Malolo Reef, Fiji, 2017</a>
+            
+            <a href="img/diving/Fiji7.JPG"
+               data-ngthumb="img/diving/fiji7.JPG">Malolo Reef, Fiji, 2017</a>
              
             <a href="img/travel/malolo_fiji.jpg"
-               data-ngthumb="img/travel/malolo_fiji.jpg">Malolo Reef, Fiji, 2017</a>
-
-            <a href="img/travel/victoria_canada.jpg"
-               data-ngthumb="img/travel/victoria_canada.jpg">Victoria, British Columbia, Canada, 2017</a>               
+               data-ngthumb="img/travel/malolo_fiji.jpg">Malolo Reef, Fiji, 2017</a>               
             
-            <a href="img/travel/ushuaia_argentina.jpg"
-               data-ngthumb="img/travel/ushuaia_argentina.jpg">Ushuaia, Argentina, 2016</a>
+            <a href="img/diving/fiji6.JPG"
+               data-ngthumb="img/diving/fiji6.JPG">Malolo Reef, Fiji, 2017</a>
             
-            <a href="img/travel/tdp_chile.jpg"
-               data-ngthumb="img/travel/tdp_chile.jpg">Torres del Paine, Chile, 2016</a>
+            <a href="img/diving/fiji5.JPG"
+               data-ngthumb="img/diving/fiji5.JPG">Malolo Reef, Fiji, 2017</a>
             
-            <a href="img/travel/calafate_argentina.jpg"
-               data-ngthumb="img/travel/calafate_argentina.jpg">Perito Moreno Glacier, Calafate, Argentina, 2016</a>
+            <a href="img/diving/fiji4.JPG"
+               data-ngthumb="img/diving/fiji4.JPG">Malolo Reef, Fiji, 2017</a>
            
-            <a href="img/travel/penguin2.jpg"
-               data-ngthumb="img/travel/penguin2.jpg">Magellanic Penguin, Puerto Madryn, Argentina, 2016</a>
+            <a href="img/diving/fiji3.JPG"
+               data-ngthumb="img/diving/fiji3.JPG">Malolo Reef, Fiji, 2017</a>
 
-            <a href="img/travel/penguin1_argentina.jpg"
-               data-ngthumb="img/travel/penguin1_argentina.jpg">Magellanic Penguin, Puerto Madryn, Argentina, 2016</a>
+            <a href="img/diving/fiji2.JPG"
+               data-ngthumb="img/diving/fiji2.JPG">Malolo Reef, Fiji, 2017</a>
 
-            <a href="img/travel/laboca_argentina.jpg"
-               data-ngthumb="img/travel/laboca_argentina.jpg">La Boca, Buenos Aires, Argentina, 2016</a>
+            <a href="img/diving/fiji1.JPG"
+               data-ngthumb="img/diving/fiji1.JPG">Malolo Reef, Fiji, 2017</a>
             
           </div>
         </div>
@@ -198,19 +258,59 @@
     </div>
   </section>
 
+  
+  <!-- Some fun stuff, leave the boring code for last. -->
+  <section class="bg-green" id="funstuff">
+    <div class="container-fluid">
+      <div class="row images-vcenter">
+      
+        <div class="col-lg-12 pb-3 text-center">
+          <h2 class="section-heading">More fun stuff!</h2>
+          <hr class="hr-black">
+        </div>
+      
+        <!-- Fun stuff includes links to Mountain Biking, Skiing and Spotify playlists -->
+        <div class="col-lg-4 col-sm-6 text-center">
+          <a class="href-black" href="https://icelandman2.github.io/diving">
+            <img src="img/portfolio/thumbnails/diving.jpg" 
+                 class="img-fluid images-border"
+                 alt="Diving">
+          </a>
+          <h3 class="mt-4 mb-4">Diving</h3>
+        </div>
+      
+        <div class="col-lg-4 col-sm-6 text-center">
+          <a class="href-black" href="https://icelandman2.github.io/travel">
+            <img src="img/portfolio/thumbnails/travel.jpg" 
+                 class="img-fluid images-border-skiing" 
+                 alt="Travel">
+          </a>
+          <h3 class="mt-4 mb-4">Travel</h3>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 text-center">
+          <a class="href-black" href="https://gostanford.com/">
+            <img src="img/portfolio/thumbnails/stanford.png" 
+                 class="img-fluid"
+                 alt="Stanford Football"
+                 width="288"
+                 height="443">
+          </a>
+          <h3 class="mt-4 mb-4">Football</h3>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
   <!-- Contact section -->
   <section class="min-padding" id="contact">
     <div class="container">
-      <div class="row">
       
-        <div class="col-4 col-sm-4 col-lg-2 offset-lg-2 text-center">
-          <a href="mailto:mslinker[AT]alumni[DOT]stanford[DOT]edu">
-            <i class="fa fa-envelope fa-4x sr-icons"></i>
-          </a>
-          <p><a href="mailto:mslinker[AT]alumni[DOT]stanford[DOT]edu" class="text-blue">Email</a></p>
-        </div>
+      <!-- Email, LinkedIn, and GitHub links -->
+      <div class="row">
         
-        <div class="col-4 col-sm-4 col-lg-2 text-center">
+        <div class="col-4 col-sm-4 col-lg-2 offset-lg-3 text-center">
           <a href="https://www.linkedin.com/in/jasonpdowning">
             <i class="fa fa-linkedin-square fa-4x sr-icons"></i>
           </a>
@@ -231,12 +331,14 @@
           <p><a href="https://instagram.com/mlinker2" class="text-blue">Instagram</a></p>
         </div>
       </div>
-      </div>
     </div>
   </section>
 
   <!--  THIS IS THE FOOTER - displays a copyright notice and
-        that Bootstrap powers this web page. -->
+        that Bootstrap powers this web page.
+        
+        6/16/2018: Added new line for the Source on Github... part, with margin bottom
+                   set to 1 (awesome new bootstrap 4 mb-1 class)-->
   <div class="container">
     <p class="text-center text-muted text-small mb-1">
       Matt Linker &copy; 2019. All rights reserved. Modified under an MIT License from original work by Jason Downing. All credit to the original author.
@@ -249,21 +351,23 @@
     </p>
   </div>
 
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-  <!-- Bootstrap Core JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-  <!-- Plugin JavaScript (for the GitHub links) -->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <!-- 6/15/2018: Updated jQuery, added Popper.js, and updated Bootstrap JS to 4.1.1 -->
+  <!-- Also pulling in the Bootstrap 4 update from Start Bootstrap too
+       https://github.com/BlackrockDigital/startbootstrap-creative  -->
+       
+  <!-- jQuery 3.3.1 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+  
+  <!-- Bootstrap 4.1 JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  
+  <!-- Plugin & Theme JavaScript (With Bootstrap 4 Update) -->
+  <script src="js/jquery.easing.min.js"></script>
   <script src="js/scrollreveal.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
-
-  <!-- Theme JavaScript -->
   <script src="js/creative.min.js"></script>
-
-  <!-- nanogallery2 -->
   <link href="css/nanogallery2.min.css" rel="stylesheet">
   <script src="js/jquery.nanogallery2.min.js"></script>
 </body>
